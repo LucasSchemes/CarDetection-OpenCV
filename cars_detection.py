@@ -7,7 +7,7 @@ def calculate_center(x1, y1, x2, y2):
     return int((x1 + x2) / 2), int((y1 + y2) / 2)
 
 parser = argparse.ArgumentParser(description='This program shows how to use background subtraction methods provided by OpenCV. You can process both videos and images.')
-parser.add_argument('--input', type=str, help='Path to a video or a sequence of image.', default='videoteste.mp4')
+parser.add_argument('--input', type=str, help='Path to a video or a sequence of image.', default='videoopencv.mp4')
 parser.add_argument('--algo', type=str, help='Background subtraction method (KNN, MOG2).', default='MOG2')
 args = parser.parse_args()
 
@@ -142,3 +142,4 @@ while True:
 
 capture.release()
 cv.destroyAllWindows()
+
